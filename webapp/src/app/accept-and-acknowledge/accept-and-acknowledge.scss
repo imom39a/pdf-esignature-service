@@ -1,0 +1,18 @@
+.accept-ack-button{
+    margin-top:10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    margin-left: -15%;
+    z-index: 100000000;
+    background-color: darkslategray;
+    .accept-btn{
+        background-color:white;
+        color: #0198e1;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

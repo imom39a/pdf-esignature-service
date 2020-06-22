@@ -1,0 +1,50 @@
+:host {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  [mat-dialog-title] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center; 
+ }
+  
+  [mat-dialog-content] {
+    max-height: unset;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-card {
+    width: 200px;
+    margin: 4px; 
+  }
+  .matSubtitle{
+    text-align:center; 
+ }
+ .fontFirst{
+   text-align:center; 
+   font-family: auto;
+ }
+ .fontSecond{
+   text-align:center; 
+   font-family: cursive;
+ }
+ .fontThird{
+   text-align:center; 
+   font-family: fantasy;
+ }
+ .sign-ack-button{
+  margin-top:10px;
+  text-align: center;
+
+  .sign-btn{
+      background-color:white;
+      color: #07547a;
+      font-weight: 600;
+      font-size: 14px;
+  }
+}

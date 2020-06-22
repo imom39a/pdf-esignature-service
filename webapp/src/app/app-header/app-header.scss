@@ -1,0 +1,70 @@
+.core-header{
+
+    background-color:darkslategray;
+    margin-left: -21%;
+    margin-right: -21%;
+    z-index: 100000000;
+    top: 0;
+    position: sticky;
+    
+    .header-info {
+        margin: 0;
+        display: flex;
+        width: 100%;
+    }  
+    .header-left-section {
+        * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    
+      .header-left-section {
+        padding-left: 12px;
+        padding-top: 0px;
+        width: 350px;
+    
+        .header-title {
+          font-size: 12px + 1;
+          color: #a7c3d4;
+          padding-left: 5px;
+          font-weight: normal;
+          padding-top: 15px;
+        }
+    
+        .ge-icon {
+          cursor: pointer;
+          i {
+            content: url('/assets/FieldCoreLogo.png');
+            height: 50px;
+          }
+        }
+      }
+
+      .header-right-section {
+        padding: 0;
+        display: flex;
+        height: 40px;
+        align-items: center;
+    
+        .user-info {
+          font-size: 12px + 2;
+          label {
+            color: blanchedalmond;
+          }
+    
+          .user-role {
+            color: darkgray;
+          }
+        }
+    
+        .settings-icon {
+          margin: 0 20px 0 5px;
+          padding-bottom: 5px;
+          i {
+            color: blanchedalmond;
+            font-size: 12px + 2;
+          }
+        }
+      }
+}

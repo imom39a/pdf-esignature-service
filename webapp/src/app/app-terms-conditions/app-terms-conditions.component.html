@@ -1,0 +1,89 @@
+<h1 mat-dialog-title>
+  <span style="text-align: center;">TERMS AND CONDITIONS</span> 
+</h1>
+
+  <div mat-dialog-content fxFlex="0" fxLayout="column">
+        <b>AGREEMENT TO TERMS</b>
+      <br>
+
+These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and [business entity name] (“we,” “us” or “our”), concerning your access to and use of the [website name.com] website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).
+
+You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these Terms and Conditions, then you are expressly prohibited from using the Site and you must discontinue use immediately.
+
+Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason.
+
+We will alert you about any changes by updating the “Last updated” date of these Terms and Conditions, and you waive any right to receive specific notice of each such change.
+
+It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the Site after the date such revised Terms and Conditions are posted.
+
+These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and [business entity name] (“we,” “us” or “our”), concerning your access to and use of the [website name.com] website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).
+
+You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these Terms and Conditions, then you are expressly prohibited from using the Site and you must discontinue use immediately.
+
+Supplemental terms and conditions or documents that may be posted on the Site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason.
+
+We will alert you about any changes by updating the “Last updated” date of these Terms and Conditions, and you waive any right to receive specific notice of each such change.
+
+It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the Site after the date such revised Terms and Conditions are posted.
+      
+       <br>
+       <br>
+        
+        <table>
+         <tr>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>First name</mat-label>
+          <input matInput [(ngModel)]="firstName" (change)="changeUpperCase(firstName)">
+        </mat-form-field></td>
+        <td></td>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput [(ngModel)]="lastName" (change)="changeUpperCase(lastName)">
+        </mat-form-field></td>
+        </tr>
+      </table> 
+      
+
+  <div fxLayout="row"  fxLayoutGap="12px"  [style.margin-top]="'10px'" style="display:flex;">
+      <div id="1"> 
+      <mat-card [ngStyle]="{'border': cardValue ==='1'? '1px solid #000':'none'}"  class="example-card" (click)="doStuff('1')">
+        <mat-card-header>
+          <mat-card-title class="fontFirst">{{firstName | uppercase}} {{lastName | uppercase}}</mat-card-title>
+          <mat-card-subtitle class="matSubtitle">Signed</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{todayDate | date:'medium'}}</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{ipAddress}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div> 
+    <div id="2">
+      <mat-card [ngStyle]="{'border': cardValue ==='2'? '1px solid #000':'none'}"  class="example-card" (click)="doStuff('2')">
+        <mat-card-header>
+          <mat-card-title class="fontSecond">{{firstName | uppercase}} {{lastName | uppercase}}</mat-card-title>
+          <mat-card-subtitle class="matSubtitle">Signed</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{todayDate | date:'medium'}}</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{ipAddress}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+    <div id="3">
+      <mat-card [ngStyle]="{'border': cardValue ==='3'? '1px solid #000':'none'}"  class="example-card" (click)="doStuff('3')">
+        <mat-card-header>
+          <mat-card-title class="fontThird">{{firstName | uppercase}} {{lastName | uppercase}}</mat-card-title>
+          <mat-card-subtitle class="matSubtitle">Signed</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{todayDate | date:'medium'}}</mat-card-subtitle>
+          <mat-card-subtitle class="matSubtitle">{{ipAddress}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div> 
+    </div>
+  </div>    
+
+  <div class="sign-ack-button">
+    <button mat-button
+    mat-raised-button [mat-dialog-close]
+    class="sign-btn"
+    (click)="sign()"
+    >
+    Accept and Sign
+    </button>
+  </div>

@@ -1,0 +1,15 @@
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+.localstack/*
+pkg/*
+bin/*
+webapp/node_modules
+webapp/build
+webapp/npm-debug.log*
+*__debug_bin*

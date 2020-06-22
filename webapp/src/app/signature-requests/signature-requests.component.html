@@ -1,0 +1,10 @@
+
+<mat-divider></mat-divider>
+<mat-nav-list>
+  <a mat-list-item [href]="link"
+     target="#"
+     *ngFor="let signatureRequest of signatureRequests">
+     <span class="documentTitle"> {{signatureRequest.originalDocumentUrl}} </span> <span class="expiresOn pull-right">Expires On - {{signatureRequest.expiresOn}}</span> </a>
+</mat-nav-list>
+<mat-divider></mat-divider>
+

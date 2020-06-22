@@ -1,0 +1,16 @@
+
+<div class="app">
+  <app-header></app-header>
+  <h2 class="title">{{title}}</h2>
+  <div>
+    <!-- <signature-requests></signature-requests> -->
+    <pdf-viewer [src]="pdfSrc" 
+              [render-text]="false"
+              [fit-to-page]="false"
+              [show-all]="true"
+              [show-borders]="true"
+              [original-size]="false"
+  ></pdf-viewer>  
+    <app-accept-and-acknowledge></app-accept-and-acknowledge>
+  </div>   
+</div>
